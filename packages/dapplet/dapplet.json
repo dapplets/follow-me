@@ -1,0 +1,21 @@
+{
+  "name": { "$ref": "package.json#/name" },
+  "branch": "default",
+  "version": { "$ref": "package.json#/version" },
+  "type": "FEATURE",
+  "title": "Follow Me",
+  "description": { "$ref": "package.json#/description" },
+  "main": { "$ref": "package.json#/main" },
+  "icon": "src/icons/icon64.png",
+  "contextIds": ["twitter.com"],
+  "config": {
+    "schema": "config/schema.json",
+    "default": "config/default.json"
+  },
+  "dependencies": {
+    "twitter-adapter.dapplet-base.eth": "0.9.17"
+  },
+  "overlays": {
+    "overlay": "https://localhost:3001/packages/overlay/build/"
+  }
+}

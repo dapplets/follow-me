@@ -1,0 +1,6 @@
+{
+  "name": "follow-me",
+  "version": "0.1.0",
+  "description": "Follow Me",
+  "main": "build/index.js"
+}

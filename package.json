@@ -1,0 +1,41 @@
+{
+  "private": true,
+  "name": "follow-me",
+  "version": "0.1.0",
+  "main": "index.js",
+  "description": "Follow Me",
+  "author": "Dapplets Team",
+  "license": "MIT",
+  "keywords": [
+    "dapplets"
+  ],
+  "scripts": {
+    "start": "concurrently \"npm:start:serve\" \"npm:start:webpack\" \"npm:start:server\"",
+    "start:webpack": "parallel-webpack --watch",
+    "start:server": "npm run start:watch --workspace=server",
+    "start:serve": "serve -C --ssl-cert utils/server.cert --ssl-key utils/server.key -l 3001",
+    "build": "webpack",
+    "link": "npm link @dapplets/dapplet-extension"
+  },
+  "repository": "git+https://github.com/dapplets/follow-me.git",
+  "bugs": {
+    "url": "https://github.com/dapplets/follow-me/issues"
+  },
+  "homepage": "https://github.com/dapplets/follow-me#readme",
+  "workspaces": [
+    "./packages/*"
+  ],
+  "devDependencies": {
+    "@dapplets/dapplet-extension": "latest",
+    "concurrently": "^6.2.1",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "parallel-webpack": "^2.6.0",
+    "serve": "^12.0.0",
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.3.5",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

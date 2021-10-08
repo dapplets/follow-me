@@ -1,0 +1,18 @@
+node_modules
+#dist/**/*
+#!dist/index.json
+
+# node modules
+node_modules
+
+# ignore transpiled files
+packages/*/lib
+build
+dist
+lerna-debug.log
+.DS_Store
+
+*.log
+tsconfig.tsbuildinfo
+
+.env

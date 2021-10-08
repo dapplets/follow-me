@@ -1,0 +1,11 @@
+{
+  "main": {
+    "serverUrl": "https://follow-me-server.herokuapp.com/"
+  },
+  "test": {
+    "serverUrl": "https://follow-me-server.herokuapp.com/"
+  },
+  "dev": {
+    "serverUrl": "http://localhost:3000/"
+  }
+}
